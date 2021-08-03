@@ -20,7 +20,8 @@ weatherForm.addEventListener('submit', (e) => {
                 console.log(data.forecast, "--2")
                 pError.textContent=data.location
         
-                pData.innerhtml=data.forecast ;
+                pData.textContent=data.forecast ;
+                console.log(pData.textContent, "--3")
             }
         })
     })

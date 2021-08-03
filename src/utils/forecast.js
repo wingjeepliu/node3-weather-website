@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         } else {
             // console.log(' It is currently ' + body.current.weather_descriptions + " " + body.current.temperature, " ********", body)
             callback(undefined, 'It is currently ' + body.current.weather_descriptions + " " + body.current.temperature + " The humidity is " + body.current.humidity + "%." )
-
+            // console.log('It is currently ' + body.current.weather_descriptions + " " + body.current.temperature + " The humidity is " + body.current.humidity + "%." );
             // + " summary <img src ='" + body.current.weather_icons + "'/>" 
         }
     })
