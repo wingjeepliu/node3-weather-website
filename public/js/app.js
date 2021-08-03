@@ -14,13 +14,13 @@ weatherForm.addEventListener('submit', (e) => {
         response.json().then((data) => {
             if (data.error) {
                 pError.textContent="Error"
-                pData.textContent="";
+                pData.innerhtml="";
             } else {
                 // console.log(data.location, "--1")
-                // console.log(data.forecast, "--2")
+                console.log(data.forecast, "--2")
                 pError.textContent=data.location
         
-                pData.textContent=data.forecast ;
+                pData.innerhtml=data.forecast ;
             }
         })
     })
